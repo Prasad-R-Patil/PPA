@@ -6,10 +6,10 @@
 int main()
 {
     int fd = 0;
-    char Arr[] ="Marvellous Infosystems";
+    char Arr[] ="  PRE PLACEMENT ACTIVITY";
     int Ret = 0;
 
-    fd = open("Marvellous.txt",O_RDWR);
+    fd = open("Marvellous.txt",O_RDWR | _O_APPEND);
 
     Ret = write(fd,Arr,strlen(Arr)); // (kashat lihaych,  kay lihaych,  kiti lihaych)
 

@@ -6,14 +6,15 @@
 int main()
 {
     int fd = 0;
-    char Arr[] ="Marvellous Infosystems";
+    char Arr[20];
     int Ret = 0;
 
     fd = open("Marvellous.txt",O_RDWR);
 
-    Ret = write(fd,Arr,strlen(Arr)); // (kashat lihaych,  kay lihaych,  kiti lihaych)
+    Ret = read(fd,Arr,15); // (kashatun wachaych,  kashtun wachaych ,  kiti wachaych)
 
-    printf("%d byte gets written in the file\n",Ret);
+    printf("%d byte gets read form the file\n",Ret);
+    printf("Data is : %s\n",Arr);
     
     close(fd);
 
