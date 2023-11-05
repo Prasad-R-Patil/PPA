@@ -6,12 +6,14 @@ int main()
 {
     int fd = 0;
 
-    fd = creat("Marvellous.txt",0777);
+    fd = open("Marvellous.txt",O_RDWR);
 
     if(fd != -1)
     {
-        printf("File is Sucessfully created with fd : %d\n",fd);
+        printf("File is Sucessfully opened with fd : %d\n",fd);
     }
+
+    close(fd);
 
     return 0;
 }
