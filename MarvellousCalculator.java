@@ -41,7 +41,7 @@ class Calculator extends WindowAdapter implements ActionListener
         mainframe.add(t2); 
 
         lobj = new JLabel();
-        lobj.setBounds(150,25,200,100);
+        lobj.setBounds(150,150,200,100);
 
         mainframe.add(lobj);  
 

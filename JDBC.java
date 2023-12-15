@@ -9,7 +9,7 @@ class JDBC
 
                 String Username = "root";
                 String Password = "root";
-                String Query= "select from student";
+                String Query= "select from Student";
 
                 Connection cobj = DriverManager.getConnection (URL, Username, Password); 
                 Statement sobj = cobj.createStatement();
