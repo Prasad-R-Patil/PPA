@@ -1,6 +1,13 @@
 import javax.swing.*;
 import java.awt.event.*;
 
+class MarvellousCalculator
+{
+    public static void main(String arg[])
+    {
+        Calculator cobj = new Calculator(400,400,"Marvellous Calculator");
+    }
+}
 class Calculator extends WindowAdapter implements ActionListener
 {
     public JFrame mainframe;
@@ -89,10 +96,3 @@ class Calculator extends WindowAdapter implements ActionListener
     }
 }
 
-class MarvellousCalculator
-{
-    public static void main(String arg[])
-    {
-        Calculator cobj = new Calculator(400,400,"Marvellous Calculator");
-    }
-}
